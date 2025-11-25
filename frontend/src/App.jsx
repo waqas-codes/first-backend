@@ -9,7 +9,7 @@ function App() {
   const [students, setStudents] = useState([])
 
   useEffect(() => {
-    axios.get('/api/students')
+axios.get('/api/students')
     .then(response => {
       setStudents(response.data)
     })
